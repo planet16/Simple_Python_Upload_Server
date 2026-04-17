@@ -1,4 +1,4 @@
-# Local Photo Upload Server
+# Local File Upload Server
 
 A lightweight Python HTTPS/HTTP upload server for transferring photos from a mobile device to a Mac over a local network. No third-party dependencies — stdlib only.
 
@@ -7,6 +7,7 @@ A lightweight Python HTTPS/HTTP upload server for transferring photos from a mob
 Designed for locked-down phones (MDM/corporate profiles) that can access local networks but restrict cloud services. The phone hits a simple upload form in Safari and sends files directly to a Mac on the same WiFi network.
 
 **Tested with:**
+- MacBook Pro M1 Max 32gb
 - iPhone iOS 17.3 / Safari
 - 321 files / 678MB in a single batch (~80 seconds over WiFi)
 
