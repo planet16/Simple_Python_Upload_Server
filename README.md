@@ -170,13 +170,19 @@ echo "PID: $!"
 
 - **Single-threaded** — one upload session at a time
 - **HTTP only** — no TLS. Suitable for trusted local networks only
-- **iOS browser conversion** — Safari may convert HEIC photos to JPEG before upload. Use a file manager app (e.g. FE File Explorer, FileBrowser) if you need raw originals
+- **iOS browser conversion** — Safari may convert HEIC photos to JPEG before upload. **Use a file manager app (e.g.  File Explorer, FileBrowser) if you need raw originals!**
 
 ---
 
 ## TIPs
 
--  If you're using this to export photos and want to preserve versus convert ( live photo vs jpeg ), then save the images as files in its original format.  Iphones have this option.  Have not tested with android.
+-  Review the access.log for any hickups during transfer.
+-  Check your downloads.  If you recieve a file thats roughly 135 bytes in size then it may have timed out.
+-  Restart the source device and upload smaller batches if errors or groups of 135 byte files are written.
+-  Your firewall is likely blocking inbound connections, make sure to poke the necessary holes during transfer and close when done.
+-  With a little modification this could be ingested into a SIEM tool.
+-  OR used for other X purposes.
+  
 ---
 
 ## License
