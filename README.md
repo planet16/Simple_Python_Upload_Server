@@ -168,6 +168,11 @@ echo "PID: $!"
 
 ---
 
+## TIPs
+
+-  If you're using this to export photos and want to preserve versus convert ( live photo vs jpeg ), then save the images as files in its original format.  Iphones have this option.  Have not tested with android.
+---
+
 ## License
 
 MIT
