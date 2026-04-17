@@ -71,6 +71,12 @@ ipconfig getifaddr en0
 
 ---
 
+<div style="background-color: #0d1117; padding: 20px; text-align: center;">
+  <p align="center">
+  <img src="screen.png" width="35%" alt="Server Page Description">
+  </p>
+</div>
+
 ## Features
 
 - **Multi-file upload** — select hundreds of files in one batch
