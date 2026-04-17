@@ -27,7 +27,10 @@ cd yourrepo
 Open `upload_server.py` and set your upload directory:
 
 ```python
-UPLOAD_DIR = Path("/your/target/folder")   # change CHANGE_ME to your path
+
+UPLOAD_DIR  = Path.home() / "/your/target/folder"   # Used for local drives below used for 
+# UPLOAD_DIR = Path("/your/target/folder")   # Can be used for local or any shared type
+
 ```
 
 Other tunables at the top of the file:
@@ -163,6 +166,11 @@ echo "PID: $!"
 - **HTTP only** — no TLS. Suitable for trusted local networks only
 - **iOS browser conversion** — Safari may convert HEIC photos to JPEG before upload. Use a file manager app (e.g. FE File Explorer, FileBrowser) if you need raw originals
 
+---
+
+## TIPs
+
+-  If you're using this to export photos and want to preserve versus convert ( live photo vs jpeg ), then save the images as files in its original format.  Iphones have this option.  Have not tested with android.
 ---
 
 ## License

@@ -4,7 +4,8 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 from pathlib import Path
 from datetime import datetime, timezone
 
-UPLOAD_DIR  = Path.home() / "CHANGE_ME'"   # Change this to the local folder location
+UPLOAD_DIR  = Path.home() / "/your/target/folder"   # Used for local drives below used for 
+# UPLOAD_DIR = Path("/your/target/folder")   # Can be used for local or any shared type
 PORT        = 8080                         # Change to any port you want
 LOG_FILE    = UPLOAD_DIR / "access.log"
 CHUNK_SIZE  = 1024 * 1024       # 1MB read chunks
