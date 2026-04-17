@@ -27,7 +27,10 @@ cd yourrepo
 Open `upload_server.py` and set your upload directory:
 
 ```python
-UPLOAD_DIR = Path("/your/target/folder")   # change CHANGE_ME to your path
+
+UPLOAD_DIR  = Path.home() / "/your/target/folder"   # Used for local drives below used for 
+# UPLOAD_DIR = Path("/your/target/folder")   # Can be used for local or any shared type
+
 ```
 
 Other tunables at the top of the file:
